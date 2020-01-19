@@ -76,7 +76,10 @@ public class JavaAlgorithmsDemo {
         } else {
             System.out.println("FALSE");
         }*/
-        System.out.println("Введите целое положительное число:");
+ 
+        /* if n switch demo */
+ 
+        /* System.out.println("Введите целое положительное число:");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int n100 = n % 100;
@@ -99,6 +102,12 @@ public class JavaAlgorithmsDemo {
                     System.out.println("Ворон");
                 }
             }
+        }*/
+        
+        /* loops demo */
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Hello " + i);
         }
     }
 
