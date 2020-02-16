@@ -80,42 +80,25 @@ public class JavaAlgorithmsDemo {
         } else {
             System.out.println("FALSE");
         }*/
-        Scanner sc = new Scanner(System.in);
         
-        MAIN : while (true) {
-            System.out.println("Введите целое положительное число:");
-            int n = sc.nextInt();
-            int n10 = n % 10;
-            int n100 = n % 100;
-            if (n100 >= 11 && n100 <= 14) {
-                System.out.println("Ворон");
-            } else {
-                switch(n10){
-                    case 1:{
-                        System.out.println("Ворона");
-                        break;
-                    }
-                    case 2:
-                    case 3:
-                    case 4: {
-                        System.out.println("Вороны");
-                        break;
-                    }
-                    default:{
-                        System.out.println("Ворон");
-                    }
-                }
+        System.out.println("Введите целое положительное число:");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int n10 = n % 10;
+        
+        switch(n10){
+            case 1:{
+                System.out.println("Ворона");
+                break;
             }
-            while (true) {               
-                System.out.println("Continue? (y/n)");
-                switch(sc.next()){
-                    case "y": {
-                        continue MAIN;
-                    }
-                    case "n": {
-                        break MAIN;
-                    }
-                }
+            case 2:
+            case 3:
+            case 4: {
+                System.out.println("Вороны");
+                break;
+            }
+            default:{
+                System.out.println("Ворон");
             }
         }
     }
